@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title_helper(yield(:title)) %></title>
-  </head>
-  <body>
-    <h1>Shiboru</h1>
-    <p>
-      This is the home page for the
-      Shiboru.
-    </p>
-  </body>
-</html>
+<div class="center jumbotron">
+  <h1>Welcome to the Shiboru</h1>
+
+  <h2>
+    This is the home page for the
+    Shiboru.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("oshibori.png", alt: "Oshibori image", width: "200"),
+                      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHttc7pcCapKiqj0f_QE2RrTzzqK4Od67w066GPS5OMAz7S504BuBF-5E1ukzFQkDytz7mbVLpq-oadto_A9tyovwb1iYhIZe4iyaT3MN3-Pd2HlwcuLhLJ3Zv-xWbWGXDCi1ULP4QLuL-/s1600/oshibori.png" %>
